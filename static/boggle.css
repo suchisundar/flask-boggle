@@ -1,0 +1,63 @@
+#boggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+body {
+    background-color: skyblue;
+  }
+
+.board {
+    border: solid 1px black;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 200%;
+    margin:auto;
+    display: table;
+    text-align: center;
+    background-color:beige
+
+  }
+  
+  .board td {
+    text-align: center;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle; 
+    color: black
+
+  }
+  
+  .msg {
+    padding: 1em;
+    width: 33.33%;
+    margin: 0 auto;
+  }
+  
+  .msg.ok {
+    color: white;
+    background-color: green;
+  }
+  
+  .msg.err {
+    color: white;
+    background-color: tomato;
+  }
+
+  .reset-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  h1 {
+    text-align: center; 
+  }
