@@ -29,11 +29,11 @@ class FlaskTests(TestCase):
 
         with self.client as client:
             with client.session_transaction() as sess:
-                sess['board'] = [["C", "A", "T", "T", "T"], 
-                                 ["C", "A", "T", "T", "T"], 
-                                 ["C", "A", "T", "T", "T"], 
-                                 ["C", "A", "T", "T", "T"], 
-                                 ["C", "A", "T", "T", "T"]]
+                sess['board'] = [["C", "A", "T", "T", "T","T", "T", "T", "T", "T"], 
+                                 ["C", "A", "T", "T", "T", "T", "T", "T", "T", "T"], 
+                                 ["C", "A", "T", "T", "T", "T", "T", "T", "T", "T"], 
+                                 ["C", "A", "T", "T", "T", "T", "T", "T", "T", "T"], 
+                                 ["C", "A", "T", "T", "T", "T", "T", "T", "T", "T"],]
         response = self.client.get('/check-word?word=cat')
         self.assertEqual(response.json['result'], 'ok')
 
